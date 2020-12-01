@@ -29,8 +29,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginTop="120dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/info_background"
@@ -48,7 +48,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/singapore"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/singaporeImageView" />
 
@@ -60,11 +60,11 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/camera"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/singaporeTextView" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/cameraValueEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,6 +72,7 @@
         android:autofillHints=""
         android:fontFamily="@font/product_sans_regular"
         android:hint="@string/camera_value"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/cameraTextView"
         app:layout_constraintStart_toEndOf="@id/cameraTextView" />
 
@@ -83,11 +84,11 @@
         android:layout_marginTop="16dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/settings"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cameraTextView" />
 
-    <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/settingsEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,15 +96,19 @@
         android:autofillHints=""
         android:fontFamily="@font/product_sans_regular"
         android:hint="@string/camera_settings"
+        android:textSize="16sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/settingsTextView"
         app:layout_constraintStart_toEndOf="@id/settingsTextView" />
 
     <ScrollView
         android:id="@+id/SingaporeScrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@id/settingsTextView">
 
         <com.google.android.material.textview.MaterialTextView
@@ -113,7 +118,7 @@
             android:fontFamily="@font/product_sans_regular"
             android:padding="16dp"
             android:text="@string/singapore_description"
-            android:textSize="20sp"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -124,9 +129,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/upload"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -135,9 +141,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/discard"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/uploadButton" />
 
