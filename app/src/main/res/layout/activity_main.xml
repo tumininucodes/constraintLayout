@@ -48,7 +48,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/product_sans_regular"
         android:text="@string/singapore"
-        android:textSize="16sp"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/singaporeImageView" />
 
@@ -64,7 +64,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/singaporeTextView" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <EditText
         android:id="@+id/cameraValueEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cameraTextView" />
 
-    <com.google.android.material.textview.MaterialTextView
+    <EditText
         android:id="@+id/settingsEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
